@@ -5,6 +5,7 @@ local NPC_ENTRY = 16396
 
 local function OnEnterCombat(event, creature, target)
     creature:SendUnitYell("Aha, stai ca pun mana pe tine " .. target:GetName() .. "!", 0)
+    creature:CastSpell(target, 71961, true)
 
 end
 
