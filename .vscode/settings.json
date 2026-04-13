@@ -1,6 +1,6 @@
 {
     "Lua.workspace.library": [
-        "./definitions"
+        "C:/definitions"
     ],
     "Lua.runtime.version": "Lua 5.2",
     "Lua.diagnostics.globals": [
