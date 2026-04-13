@@ -25,11 +25,16 @@ local function OnAIUpdate(event, creature, diff)
 
     spellTimer2 = spellTimer2 - diff
     if spellTimer2 <= 0 then
-        local target = creature:GetVictim()
-        if target then
-            creature:CastSpell(target, 69652, true)
+        if spellTimer < 3000 then
+            -- asteapta sa termine spell-ul de 10s, apoi casteza dupa 3s
+            spellTimer2 = spellTimer + 3000
+        else
+            local target = creature:GetVictim()
+            if target then
+                creature:CastSpell(target, 69652, true)
+            end
+            spellTimer2 = 20000
         end
-        spellTimer2 = 20000
     end
 end
 
