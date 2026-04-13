@@ -38,5 +38,10 @@ local function OnAIUpdate(event, creature, diff)
     end
 end
 
+local function OnSpawn(event, creature)
+    creature:SetEquipmentSlots(49623, 50729, 0)
+end
+
 RegisterCreatureEvent(NPC_ENTRY, 1, OnEnterCombat)
+RegisterCreatureEvent(NPC_ENTRY, 5, OnSpawn)
 RegisterCreatureEvent(NPC_ENTRY, 7, OnAIUpdate)
