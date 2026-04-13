@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:www.azerothcore.org)"
+      "WebFetch(domain:www.azerothcore.org)",
+      "WebFetch(domain:github.com)"
     ]
   }
 }
