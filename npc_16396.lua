@@ -31,7 +31,7 @@ local function OnAIUpdate(event, creature, diff)
         else
             local target = creature:GetVictim()
             if target then
-                creature:CastSpell(target, 69652, true)
+                creature:CastSpell(target, 42723, true)
             end
             spellTimer2 = 20000
         end
